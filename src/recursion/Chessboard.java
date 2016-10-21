@@ -30,11 +30,10 @@ public class Chessboard {
  
     public String addQueen() {
         for(int i = 0; i < SIZE; i++) {
-            System.out.println(i);
             addQueen(0, i);
             queens.clear();
         }
-        return answers + numAnswers;
+        return answers + "\n" + numAnswers + " solutions found!";
     }
     
     private boolean valid(int x, int y) {

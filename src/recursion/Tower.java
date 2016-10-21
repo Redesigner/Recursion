@@ -8,15 +8,4 @@ public class Tower extends Stack {
             push(i);
         }
     }
-   
-    public boolean addRing(int size){
-        if((int)peek() > size){ //trust me guys, TRUST ME
-            super.push(size);
-            return true;
-        }
-        else {
-            System.out.println("Invalid move");
-            return false;
-        }
-    }
 }
